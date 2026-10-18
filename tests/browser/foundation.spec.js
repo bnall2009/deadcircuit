@@ -45,10 +45,10 @@ test('title is keyboard accessible; rendered canvas is crisp and nonempty', asyn
   expect(canvas.colors).toBeGreaterThan(25);
 });
 
-test('starting a game shows a button-free FALLSHIP loading screen before briefing', async ({ page }) => {
+test('starting a game shows a button-free DEAD CIRCUIT loading screen before briefing', async ({ page }) => {
   await page.getByRole('button', { name: 'Begin exploration' }).click();
   await expect(page.getByRole('dialog')).toHaveAttribute('data-mode', 'loading');
-  await expect(page.getByRole('heading', { name: 'FALLSHIP' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'DEAD CIRCUIT' })).toBeVisible();
   await expect(page.getByRole('dialog').getByRole('button')).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'NEXT' })).toBeVisible();
 });

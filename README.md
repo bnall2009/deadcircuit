@@ -1,6 +1,6 @@
-# FALLSHIP
+# DEAD CIRCUIT
 
-FALLSHIP is a small browser game set aboard the damaged Meridian. You play an engineer, meet Morrow, and travel through five ship maps with one to five active faults as the levels get harder. Each deck has six physical units, but only the highlighted faults need a Python program; walk up to a faulty unit and press E to open its checker.
+DEAD CIRCUIT is a small browser game set aboard the damaged Meridian. You play an engineer, meet Morrow, and travel through five ship maps with one to five active faults as the levels get harder. Each deck has six physical units, but only the highlighted faults need a Python program; walk up to a faulty unit and press E to open its checker.
 
 ## Run it locally
 
@@ -19,7 +19,7 @@ npm run build
 npm run test:browser
 ```
 
-There is also a hosted build at [fallship.vercel.app](https://fallship.vercel.app) when the deployment is available.
+There is also a hosted build at [dead-circuit.vercel.app](https://dead-circuit.vercel.app) when the deployment is available.
 
 `npm run check` runs the syntax checks, unit tests, and production build. The browser suite uses Playwright and may need `npm run test:browser:install` once on a new machine.
 

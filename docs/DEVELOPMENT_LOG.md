@@ -2,7 +2,7 @@
 
 ## Current state
 
-FALLSHIP is a browser game built with native Canvas, ES modules, Vite, and Playwright. The current playable slice has five connected ship maps, six physical machines per level, one to five active faults, Morrow’s briefing, a centered T-map, timed runs, collision, camera tracking, menus, and a small static Python checker. The bundled VT323 face is used for the canvas labels and DOM UI.
+DEAD CIRCUIT is a browser game built with native Canvas, ES modules, Vite, and Playwright. The current playable slice has five connected ship maps, six physical machines per level, one to five active faults, Morrow’s briefing, a centered T-map, timed runs, collision, camera tracking, menus, and a small static Python checker. The bundled VT323 face is used for the canvas labels and DOM UI.
 
 The project stays intentionally small: simulation rules live in `src/game/`, map and object data live in `src/world/`, drawing lives in `src/render/`, and panels live in `src/ui/`. The checker validates source shape and challenge requirements but never executes player code.
 

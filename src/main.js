@@ -7,10 +7,10 @@ import { createInterface } from './ui/interface.js';
 
 const app = document.querySelector('#app');
 // Paint the low-resolution floor labels only after the shared pixel face is ready.
-await document.fonts.load('8px "Fallship Pixel"');
+await document.fonts.load('8px "Dead Circuit Pixel"');
 let state = createGame();
 let loop;
-const savedLevel = () => Number.parseInt(localStorage.getItem('fallship-level') ?? '0', 10) || 0;
+const savedLevel = () => Number.parseInt(localStorage.getItem('dead-circuit-level') ?? '0', 10) || 0;
 
 function transition(change) {
   input.clear();
@@ -43,7 +43,7 @@ const actions = {
   title: () => transition(() => { state = createGame(); }),
   inspect: () => { if (state.mode === 'playing' && state.nearby) transition(() => inspectNearby(state)); },
   close: () => transition(() => closeInspection(state)),
-  solve: code => { solveChallenge(state, code); if (state.levelPassed) localStorage.setItem('fallship-level', String(Math.min(state.levelIndex + 1, 4))); ui.refresh(state); },
+  solve: code => { solveChallenge(state, code); if (state.levelPassed) localStorage.setItem('dead-circuit-level', String(Math.min(state.levelIndex + 1, 4))); ui.refresh(state); },
   challengeActivity: () => { state.challengeStarted = true; state.challengeIdleTime = 0; },
   dismissMorrowHint: () => transition(() => { state.morrowHint = ''; }),
 };

@@ -62,7 +62,7 @@ export function createRenderer(canvas, map, minimap, overviewCanvas) {
     overview.strokeStyle = '#789178'; overview.lineWidth = 1;
     for (const room of ROOMS) {
       overview.strokeRect(ox + room.x * scale, oy + room.y * scale, room.width * scale, room.height * scale);
-      overview.fillStyle = '#d3dfc1'; overview.font = `${Math.max(8, Math.floor(scale * 0.7))}px "Fallship Pixel", monospace`;
+      overview.fillStyle = '#d3dfc1'; overview.font = `${Math.max(8, Math.floor(scale * 0.7))}px "Dead Circuit Pixel", monospace`;
       overview.fillText(room.name.toUpperCase(), ox + (room.x + 1) * scale, oy + (room.y + 1.5) * scale);
     }
     overview.strokeStyle = '#b7ca9a'; overview.strokeRect(ox + state.camera.x / 16 * scale, oy + state.camera.y / 16 * scale, VIEW.width / 16 * scale, VIEW.height / 16 * scale);
@@ -111,7 +111,7 @@ export function createRenderer(canvas, map, minimap, overviewCanvas) {
       ctx.fillStyle = '#c5dc8b'; ctx.fillRect(markerX, markerY, 12, 12);
       ctx.strokeStyle = '#172729'; ctx.strokeRect(markerX + 0.5, markerY + 0.5, 11, 11);
       ctx.fillStyle = '#172729';
-      ctx.font = '8px "Fallship Pixel", "Courier New", "Lucida Console", monospace';
+      ctx.font = '8px "Dead Circuit Pixel", "Courier New", "Lucida Console", monospace';
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText('E', markerX + 6, markerY + 6);
       ctx.restore();
